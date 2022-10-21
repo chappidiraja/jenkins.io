@@ -1,0 +1,16 @@
+jenkins port no.change to use 
+
+vi /etc/sysconfig/jenkins
+
+jenkins installations process
+
+  yum install fontconfig java-11-openjdk
+  sudo amazon-linux-extras install java-openjdk11
+  yum install git maven -y
+  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+  yum install jenkins
+  systemctl start jenkins
+  service jenkins status
+  
+    
