@@ -4,7 +4,7 @@ vi /etc/sysconfig/jenkins
 
 jenkins installations process
 
-  yum install fontconfig java-11-openjdk
+  yum install fontconfig java-11-openjdk            or       yum install java   or        yum install java 1.8.0-openjdk
   sudo amazon-linux-extras install java-openjdk11
   yum install git maven -y
   sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
@@ -12,5 +12,6 @@ jenkins installations process
   yum install jenkins
   systemctl start jenkins
   service jenkins status
-  
+  cat /var/lib/jenkins/secrets/initialAdminPassword                                                key genetator ieeddi
     
+6a36febe704f4c55ac7c2b5aa3235d1f                                                                  its is a key
